@@ -2,7 +2,7 @@ let formTitle = document.querySelector('#title');
 let formAuthor = document.querySelector('#author');
 let formPageCount = document.querySelector('#pgCount');
 let formRead = document.querySelector('#read');
-let formBtn = document.querySelector('newBookBtn');
+let formBtn = document.querySelector('#newBookBtn');
 
 let library = [];
 
@@ -16,3 +16,11 @@ function Book (title, author, pgCount, read) {
     this.read = read;
     this.id = crypto.randomUUID();
 }
+
+function addBook (e) {
+    let book = new Book(formTitle.value, formAuthor.value, formPageCount.value, formRead.checked);
+    library.push(book);
+    e.preventDefault();
+}
+
+formBtn.addEventListener('click', addBook);
