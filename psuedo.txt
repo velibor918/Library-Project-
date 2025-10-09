@@ -35,6 +35,8 @@ add pop up form that adds books to library array
                         this DOM create function will be seperate function that will be called with book param
                         function createDiv(book)
                             const value = document.createElement(div)
+                            here add check for read value
+                            based on value give the specific p the required text content
                             value.appendChild(document.createElement(p).textContent = book.value)
                             value.setAttribute(data-attribute book.id)
                             value.appendChild(document.createElement(button).addEventListener(read status function))
