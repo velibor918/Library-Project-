@@ -9,6 +9,22 @@ have way to remove books from array
 let library = []
 
 constructor Book (title name author pgnumber read) Also add unique id, without it being in parameters
+    read should be true or false value
+    have function that can check and change read value  
+        dependent on this value, toggle read status text content and inform user of read state
+
+
+make function that toggles books read state
+put it on Book prototype
+append it to button in DOM before pushing the DOM to the DIV
+
+function readState 
+    if this.read = true
+            this.read = false
+            the read p.textContent = Not read
+    else this.read = true
+            the read p.textContent = Read
+IMPORTANT READ P MUST HAVE CLASS ADDED IN CREATEDIV FUNCTION SO IT CAN BE ACCESSED
 
 add pop up form that adds books to library array
     form would have basic structure, submit button would have funcion 
@@ -16,5 +32,25 @@ add pop up form that adds books to library array
         function also has prevent default to avoid issues
             function form 
                 let book = new Book (form.values)
-                return library.push(book)
+                        this DOM create function will be seperate function that will be called with book param
+                        function createDiv(book)
+                            const value = document.createElement(div)
+                            value.appendChild(document.createElement(p).textContent = book.value)
+                            value.setAttribute(data-attribute book.id)
+                            value.appendChild(document.createElement(button).addEventListener(read status function))
+                            parentdiv /the one that holds all the books dom cards/ .appendChild(value)
+                library.push(book)
+
+have basic layout with div where new books will be stored 
+after new book is created from form, when it is pushed, create a div for it and push it to the parent div
+
+make function that removes books from array 
+function remove books 
+    let value = library.indexOf(this.id)
+    array.splice(value, 1)
+    let value2 
+        for loop 
+            find DOM with corresponding data attribute and put it in a value
+        parentDiv.removeChild(value of data attribute)  
+            
 
