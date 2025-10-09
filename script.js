@@ -3,6 +3,7 @@ let formAuthor = document.querySelector('#author');
 let formPageCount = document.querySelector('#pgCount');
 let formRead = document.querySelector('#read');
 let formBtn = document.querySelector('#newBookBtn');
+let mainForm = document.querySelector('#mainForm');
 
 let library = [];
 
