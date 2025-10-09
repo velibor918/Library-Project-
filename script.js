@@ -22,6 +22,7 @@ function addBook (e) {
     let book = new Book(formTitle.value, formAuthor.value, formPageCount.value, formRead.checked);
     library.push(book);
     e.preventDefault();
+    mainForm.reset();
 }
 
 formBtn.addEventListener('click', addBook);
