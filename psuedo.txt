@@ -1,0 +1,20 @@
+have array
+have constructor
+have way to add books to array 
+have way to create dom elements and associate them with book
+have function that toggles books read state
+have way to remove books from array
+
+
+let library = []
+
+constructor Book (title name author pgnumber read) Also add unique id, without it being in parameters
+
+add pop up form that adds books to library array
+    form would have basic structure, submit button would have funcion 
+        function would take form values as params and put them in constructor
+        function also has prevent default to avoid issues
+            function form 
+                let book = new Book (form.values)
+                return library.push(book)
+
