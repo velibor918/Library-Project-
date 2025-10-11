@@ -4,6 +4,7 @@ let formPageCount = document.querySelector('#pgCount');
 let formRead = document.querySelector('#read');
 let formBtn = document.querySelector('#newBookBtn');
 let mainForm = document.querySelector('#mainForm');
+let container = document.querySelector(".placeholder");
 
 let library = [];
 
@@ -26,3 +27,4 @@ function addBook (e) {
 }
 
 formBtn.addEventListener('click', addBook);
+
