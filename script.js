@@ -22,9 +22,33 @@ function Book (title, author, pgCount, read) {
 function addBook (e) {
     let book = new Book(formTitle.value, formAuthor.value, formPageCount.value, formRead.checked);
     library.push(book);
+    book.createDiv();
     e.preventDefault();
     mainForm.reset();
 }
 
 formBtn.addEventListener('click', addBook);
 
+Book.prototype.createDiv = function() {
+  let createDiv = document.createElement('div');
+  createDiv.setAttribute("id", this.id);
+  createDiv.setAttribute("class", 'card');
+
+  let titleP = document.createElement('p');
+  titleP.textContent = `Title: ${this.title}`;
+  createDiv.appendChild(titleP);
+
+  let authorP = document.createElement('p');
+  authorP.textContent = `Author: ${this.author}`;
+  createDiv.appendChild(authorP);
+
+  let pgCountPara = document.createElement('p');
+  pgCountPara.textContent = `Page Count: ${this.pgCount}`;
+  createDiv.appendChild(pgCountPara);
+
+  let readP = document.createElement('p');
+  readP.textContent = `Have you read this book? ${this.read}`;
+  createDiv.appendChild(readP);
+
+  container.appendChild(createDiv);
+}
