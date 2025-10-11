@@ -33,6 +33,7 @@ add pop up form that adds books to library array
             function form 
                 let book = new Book (form.values)
                         this DOM create function will be seperate function that will be called with book param
+                        this function will be on Book contstructor as prototype
                         function createDiv(book)
                             const value = document.createElement(div)
                             here add check for read value
