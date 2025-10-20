@@ -18,6 +18,16 @@ make function that toggles books read state
 put it on Book prototype
 append it to button in DOM before pushing the DOM to the DIV
 
+    create checkbox
+        if this.read is true 
+            document.createElement checkbox with attribute checked
+        else document.createElement checbox without checked attribute
+    before appending it to parent div, give it function to change books read state
+        make new proto function that changes books read state upon registering change in checkbox
+            if checbox.checked
+                this.read = true
+            else this.read = false 
+
 function readState 
     if this.read = true
             this.read = false
