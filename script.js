@@ -52,3 +52,12 @@ Book.prototype.createDiv = function() {
 
   container.appendChild(createDiv);
 }
+
+Book.prototype.checkRead = function (e) {
+  if (e.target.checked) {
+    this.read = true;
+  }
+  else {
+    this.read = false;
+  }
+}
