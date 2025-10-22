@@ -29,6 +29,15 @@ function addBook (e) {
 
 formBtn.addEventListener('click', addBook);
 
+Book.prototype.checkRead = function (e) {
+  if (e.target.checked) {
+    this.read = true;
+  }
+  else {
+    this.read = false;
+  }
+}
+
 Book.prototype.createDiv = function() {
   let createDiv = document.createElement('div');
   createDiv.setAttribute("id", this.id);
@@ -49,15 +58,16 @@ Book.prototype.createDiv = function() {
   let readP = document.createElement('p');
   readP.textContent = `Have you read this book? ${this.read}`;
   createDiv.appendChild(readP);
+  
+  let readCheck = document.createElement("input");
+  readCheck.setAttribute("type", "checkbox");
+  if (this.read == true) {
+      readCheck.checked = true;;
+     };
+  createDiv.appendChild(readCheck);
+//   readCheck.addEventListener("change", checkRead);
+
 
   container.appendChild(createDiv);
 }
 
-Book.prototype.checkRead = function (e) {
-  if (e.target.checked) {
-    this.read = true;
-  }
-  else {
-    this.read = false;
-  }
-}
