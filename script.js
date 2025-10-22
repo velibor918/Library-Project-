@@ -65,7 +65,14 @@ Book.prototype.createDiv = function() {
       readCheck.checked = true;;
      };
   createDiv.appendChild(readCheck);
-//   readCheck.addEventListener("change", checkRead);
+  readCheck.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      this.read = true;
+    }
+    else {
+      this.read = false;
+    }
+  });
 
 
   container.appendChild(createDiv);
