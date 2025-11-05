@@ -74,6 +74,14 @@ Book.prototype.createDiv = function() {
     }
   });
 
+  let removeBtn = document.createElement('button');
+  removeBtn.textContent = `Remove Book`;
+  createDiv.appendChild(removeBtn);
+  removeBtn.addEventListener('click', (e) => {
+    let removedIndex = library.indexOf(this);
+    library.splice(removedIndex, 1);
+  })
+
 
   container.appendChild(createDiv);
 }
