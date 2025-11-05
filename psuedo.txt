@@ -63,6 +63,10 @@ function remove books
     array.splice(value, 1)
     let value2 
         for loop 
+            let i 0 i < array length i ++
+                if(i[data-attribute] === this.id)
+                    parentDiv.removeChild(i)
+                    break
             find DOM with corresponding data attribute and put it in a value
         parentDiv.removeChild(value of data attribute)  
             
