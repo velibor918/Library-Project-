@@ -78,6 +78,13 @@ Book.prototype.createDiv = function() {
   removeBtn.textContent = `Remove Book`;
   createDiv.appendChild(removeBtn);
   removeBtn.addEventListener('click', (e) => {
+    let containerChildren = container.querySelectorAll('div');
+    containerChildren.forEach( (child) => {
+      if(child["id"] === this.id) {
+        container.removeChild(child);
+      }
+    })
+
     let removedIndex = library.indexOf(this);
     library.splice(removedIndex, 1);
   })
