@@ -28,6 +28,7 @@ function addBook (e) {
     book.createDiv();
     e.preventDefault();
     mainForm.reset();
+    dialog.close();
 }
 
 formBtn.addEventListener('click', addBook);
