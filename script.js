@@ -97,5 +97,10 @@ Book.prototype.createDiv = function() {
 }
 
 openFormBtn.addEventListener('click', (e) => {
+  dialog.showModal();
+});
 
+cancelFormBtn.addEventListener('click', (e) => {
+  dialog.close();
 })
+
