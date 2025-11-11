@@ -42,6 +42,10 @@ Book.prototype.checkRead = function (e) {
   }
 }
 
+function randomID () {
+  return crypto.randomUUID();
+}
+
 Book.prototype.createDiv = function() {
   let createDiv = document.createElement('div');
   createDiv.setAttribute("id", this.id);
@@ -58,13 +62,18 @@ Book.prototype.createDiv = function() {
   let pgCountPara = document.createElement('p');
   pgCountPara.textContent = `Page Count: ${this.pgCount}`;
   createDiv.appendChild(pgCountPara);
+  
+  let readCheckID = randomID();
 
-  let readP = document.createElement('p');
-  readP.textContent = `Have you read this book? ${this.read}`;
+  let readP = document.createElement('label');
+  readP.setAttribute('for', `${readCheckID}`);
+  readP.textContent = `Have you read this book?`;
   createDiv.appendChild(readP);
+
   
   let readCheck = document.createElement("input");
   readCheck.setAttribute("type", "checkbox");
+  readCheck.setAttribute('id', `${readCheckID}`);
   if (this.read == true) {
       readCheck.checked = true;;
      };
