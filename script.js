@@ -7,6 +7,7 @@ let mainForm = document.querySelector('#mainForm');
 let container = document.querySelector(".placeholder");
 let openFormBtn = document.querySelector('#openForm');
 let cancelFormBtn = document.querySelector('#cancelForm');
+let dialog = document.querySelector('dialog');
 
 let library = [];
 
@@ -95,3 +96,6 @@ Book.prototype.createDiv = function() {
   container.appendChild(createDiv);
 }
 
+openFormBtn.addEventListener('click', (e) => {
+
+})
