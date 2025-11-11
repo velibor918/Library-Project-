@@ -5,6 +5,8 @@ let formRead = document.querySelector('#read');
 let formBtn = document.querySelector('#newBookBtn');
 let mainForm = document.querySelector('#mainForm');
 let container = document.querySelector(".placeholder");
+let openFormBtn = document.querySelector('#openForm');
+let cancelFormBtn = document.querySelector('#cancelForm');
 
 let library = [];
 
