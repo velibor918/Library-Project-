@@ -3,10 +3,20 @@ body {
 }
 
 .dial-holder {
+    position: sticky;
     display: flex;
     background-color: rgb(88, 228, 221);
-    height: 3.5rem;
-    margin-bottom: auto;
+    height: 75px;
+    top: 0px;
     justify-content: center;
     align-items: center;
+}
+
+#openForm {
+    color: black;
+    background-color: rgb(88, 228, 221);
+    height: 52px;
+    width: 128px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
