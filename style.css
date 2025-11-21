@@ -66,3 +66,8 @@ button:active {
 dialog {
     border-radius: 10px;
 }
+
+#read {
+    transform: scale(1.6);
+    margin-left: 10px;
+}
