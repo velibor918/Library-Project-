@@ -36,6 +36,7 @@ button:active {
 }
 
 #mainForm {
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -45,6 +46,11 @@ button:active {
 #mainForm input {
     margin-bottom: 20px;
     margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+#mainForm button {
+    font-size: 1rem;
 }
 
 .check-holder {
