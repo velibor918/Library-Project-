@@ -2,6 +2,11 @@ body {
     margin: 0;
 }
 
+body, button, input, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;;
+
+}
+
 .dial-holder {
     position: sticky;
     display: flex;
@@ -28,4 +33,8 @@ button:hover {
 
 button:active {
     filter: brightness(100%);
+}
+
+#mainForm {
+    display: flex;
 }
