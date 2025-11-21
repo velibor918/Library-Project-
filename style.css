@@ -46,3 +46,8 @@ button:active {
     margin-bottom: 20px;
     margin-top: 5px;
 }
+
+.check-holder {
+    text-align: center;
+    margin-bottom: 5px;
+}
