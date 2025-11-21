@@ -56,3 +56,7 @@ button:active {
     display: flex;
     justify-content: space-between;
 }
+
+dialog {
+    border-radius: 10px;
+}
