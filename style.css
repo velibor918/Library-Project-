@@ -37,4 +37,12 @@ button:active {
 
 #mainForm {
     display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#mainForm input {
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
