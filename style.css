@@ -51,3 +51,8 @@ button:active {
     text-align: center;
     margin-bottom: 5px;
 }
+
+.btn-holder {
+    display: flex;
+    justify-content: space-between;
+}
